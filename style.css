@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f9f8;
+    color: #333;
+    margin: 0;
+    padding: 10px; /* Corrigido para 10px */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #00796b;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus { 
+    color: #052e0d;
+}
+
+.section {
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #316f6c (255, 255, 255);
+    border-radius: 8px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #00796b;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #e0f2f1;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+ul li:hover {
+    background-color: #b2dfdb;
+}
+
+a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus { 
+    color: #042b15;
+}
+
+.imagem {
+    width: 150px; 
+    border-radius: 50%; 
+    border: 3px solid #00796b; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    display: block; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; 
+    }
+
+    .section {
+        padding: 15px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    .imagem {
+        width: 120px; 
+    }
+}
+
+@media (min-width: 769px) {
+    .section {
+        max-width: 800px; 
+    }
+}
